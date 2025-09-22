@@ -5,36 +5,33 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>java-spi-demo</artifactId>
+        <artifactId>spi-demo</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spi-demo</artifactId>
+    <artifactId>dubbo-spi</artifactId>
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>common-interface</artifactId>
         </dependency>
         <dependency>
             <groupId>com.qwj</groupId>
-            <artifactId>no-spi</artifactId>
+            <artifactId>mysql</artifactId>
             <version>1.0.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/no-spi-demo-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/mysql-provider-demo-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.qwj</groupId>-->
-<!--            <artifactId>mysql</artifactId>-->
-<!--            <version>1.0.0</version>-->
-<!--            <scope>system</scope>-->
-<!--            <systemPath>${project.basedir}/src/main/resources/lib/mysql-provider-demo-1.0-SNAPSHOT.jar</systemPath>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>com.qwj</groupId>
             <artifactId>oracle</artifactId>
@@ -43,5 +40,4 @@
             <systemPath>${project.basedir}/src/main/resources/lib/oracle-provider-demo-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
     </dependencies>
-
 </project>

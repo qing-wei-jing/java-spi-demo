@@ -5,21 +5,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>java-spi-demo</artifactId>
+    <artifactId>spi-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>no-spi-demo</module>
-        <module>spi-demo</module>
+        <module>java-spi-demo</module>
         <module>mysql-provider-demo</module>
         <module>oracle-provider-demo</module>
         <module>common-interface</module>
+        <module>dubbo-spi</module>
     </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dubbo.version>3.3.2</dubbo.version>
     </properties>
 
     <dependencyManagement>
@@ -28,6 +30,11 @@
                 <groupId>org.example</groupId>
                 <artifactId>common-interface</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

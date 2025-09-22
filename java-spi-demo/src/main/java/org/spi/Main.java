@@ -13,6 +13,5 @@ public class Main {
         // 使用SPI的方式
         JDBCSpiUtils jdbcSPIUtils = JDBCSpiUtils.getInstance();
         jdbcSPIUtils.sendRequest("spi");
-
     }
 }

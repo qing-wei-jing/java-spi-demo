@@ -10,7 +10,5 @@ public class Main {
         JDBCNoSpiUtils jdbcNoSPIUtils = new JDBCNoSpiUtils(new MysqlDriver());
         jdbcNoSPIUtils.connect("qqq");
 
-        JDBCNoSpiUtils jdbcNoSpiUtils2 = new JDBCNoSpiUtils(new OracleDriver());
-        jdbcNoSpiUtils2.connect("www");
     }
 }

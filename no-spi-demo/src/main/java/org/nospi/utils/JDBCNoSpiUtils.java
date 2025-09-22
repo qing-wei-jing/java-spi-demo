@@ -19,12 +19,4 @@ public class JDBCNoSpiUtils {
         jdbcNoSpiService.connect(message);
 
     }
-
-    public JDBCNoSpiService getJdbcService() {
-        return jdbcNoSpiService;
-    }
-
-    public void setJdbcService(JDBCNoSpiService jdbcNoSpiService) {
-        this.jdbcNoSpiService = jdbcNoSpiService;
-    }
 }
